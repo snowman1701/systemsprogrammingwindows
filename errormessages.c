@@ -28,7 +28,8 @@ int main(int argc, const char *argv[])
     if (characters > 0)
     {
         // %ws is format specifier for wide string
-        printf("Message %d: %ws\n", message, text);
+        // i used %s becauase ws did not work
+        printf("Message %d: %s\n", message, text);
         // free() function for windows
         LocalFree(text);
     }
